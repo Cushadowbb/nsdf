@@ -7,39 +7,11 @@
 
     body {
       color: white;
-      background-color: #000;
+      background-color: #000000;
     }
 
-    header {
-      position: fixed;
-      top: 0;
-      width: 100%;
-      padding: 20px 50px;
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      z-index: 10;
-      background-color: #111;
-    }
-
-    .logo {
-      font-weight: bold;
-      font-size: 24px;
-      color: #f5f5f5;
-    }
-
-    nav ul {
-      display: flex;
-      list-style: none;
-      gap: 25px;
-    }
-
-    nav ul li a {
-      text-decoration: none;
-      color: white;
-      font-weight: bold;
-      font-size: 14px;
-    }
+    
+    
 
     .hero,
     .new-arrivals {
@@ -114,9 +86,42 @@
         text-align: center;
       }
     }
-    .hvr {
+    header {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  padding: 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  z-index: 10;
+  background-color: #000000;
+}
+
+.logo {
+  font-weight: bold;
+  font-size: 24px;
+  color: #f5f5f5;
+  padding: 10px 20px;
+}
+
+nav ul {
+  display: flex;
+  list-style: none;
+  gap: 25px;
+  margin-right: 20px;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: white;
+  font-weight: bold;
+  font-size: 14px;
+}
+
+.hvr {
   display: inline-block;
-  padding: 12px 45px;
+  padding: 12px 20px;
   background-color: #37bcd4;
   color: #000;
   text-decoration: none;
@@ -124,7 +129,7 @@
   border-radius: 8px;
   transition: all 0.3s ease;
 }
-    .hvr:hover {
+.hvr:hover {
   background-color: #48f0da;
   color: #222;
   transform: scale(1.05);

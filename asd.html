@@ -4,7 +4,7 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Оформлення замовлення</title>
-  <link rel="stylesheet" href="/fsd/asd.css" />
+  <link rel="stylesheet" href="/asd.css" />
 </head>
 <body>
   <header>
@@ -14,7 +14,7 @@
   <main>
     <section class="checkout-form">
       <h2>Введіть ваші дані</h2>
-      <form action="#" method="post">
+      <form action="https://formspree.io/f/xyzabc" method="POST" enctype="text/plain">
         <label for="name">ПІБ:</label>
         <input type="text" id="name" name="name" required>
 
@@ -27,11 +27,16 @@
         <label for="phone">Номер телефону:</label>
         <input type="tel" id="phone" name="phone" required>
 
+        <label for="payment">Оплата:</label>
+        <select name="payment" id="payment">
+          <option value="online">Онлайн оплата</option>
+          <option value="on-receipt">Оплата при отриманні</option>
+        </select>
+
         <button type="submit" class="btn">Підтвердити замовлення</button>
       </form>
 
-      
-      <a href="index.html" class="btn back-btn">← Повернутись на головну</a>
+      <a href="katalog.html" class="btn back-btn">← Повернутись до каталогу</a>
     </section>
   </main>
 </body>
